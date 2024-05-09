@@ -1,0 +1,15 @@
+models:
+  - name: product_by_dow
+    description: Sale volume of products by day-of-week
+    columns:
+      - name: dow
+        description: The day of the week
+        tests:
+          - dbt_utils.not_accepted_values:
+              values: ['Barcelona', 'Mon']
+
+
+
+      - name: somethingelsewrong
+        description: Something wrong
+
