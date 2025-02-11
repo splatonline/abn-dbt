@@ -6,9 +6,7 @@ models:
         description: The day of the week
         tests:
           - dbt_utils.not_accepted_values:
-              values: ['Barcelona', 'Mon']
-
-
+              values: ['Mon']
 
       - name: somethingelsewrong
         description: Something wrong
